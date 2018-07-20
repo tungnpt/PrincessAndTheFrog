@@ -26,46 +26,6 @@ public class GameWindow extends JFrame {
     }
 
     private void keyboardEvent() {
-//        this.addKeyListener(new KeyListener() {
-//            @Override
-//            public void keyTyped(KeyEvent e) {
-//            }
-//
-//            @Override
-//            public void keyPressed(KeyEvent e) {
-//                if (e.getKeyCode() == KeyEvent.VK_LEFT) {
-//                    gameCanvas.player.position.x -= gameCanvas.player.velocity.x;
-//                    gameCanvas.player.onIsland=false;
-//                }
-//                if (e.getKeyCode() == KeyEvent.VK_RIGHT) {
-//                    gameCanvas.player.position.x += gameCanvas.player.velocity.x;
-//                    gameCanvas.player.onIsland=false;
-//                }
-//                if (e.getKeyCode() == KeyEvent.VK_UP) {
-//                    gameCanvas.player.position.y -= gameCanvas.player.velocity.y;
-//                    gameCanvas.player.onIsland=false;
-//                }
-//                if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-//                    if(gameCanvas.player.onIsland==false){
-//                        gameCanvas.player.position.y += gameCanvas.player.velocity.y;
-//                    }else{
-//                        int velo = (int)gameCanvas.floatingIsland.position.y-(int)gameCanvas.player.position.y-(int)gameCanvas.player.height;
-//                        gameCanvas.player.position.y += velo;
-//                        gameCanvas.player.onIsland=false;
-//                    }
-//                }
-//                if (e.getKeyCode() == KeyEvent.VK_SPACE) {
-//                    gameCanvas.floatingIsland.position.addUp(gameCanvas.floatingIsland.velocity);
-//                }
-//            }
-//
-//            @Override
-//            public void keyReleased(KeyEvent e) {
-//                if (e.getKeyCode() == KeyEvent.VK_DOWN) {
-//
-//                }
-//            }
-//        });
         this.addKeyListener(KeyboardInput.instance);
     }
 
